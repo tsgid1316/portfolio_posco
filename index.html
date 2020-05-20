@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./lib/fullpage/fullpage.css" />
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
+    <script src="./lib/fullpage/easings.min.js"></script>
+    <script src="./lib/fullpage/scrolloverflow.min.js"></script>
+    <script src="./lib/fullpage/fullpage.js"></script>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <title>포스코 50주년</title>
+  </head>
+
+  <body>
+    <!-- 내용 -->
+    <header class="header">
+      <nav>
+      <div class="logo">로고</div>
+      <div class="title">타이틀</div>
+      <button id="menu" class="menu" onclick="handleNav()"></button>
+    </nav>
+      <div id="sub_menu" class="sub_menu" onclick="handleNav()">
+      <div class="txt_box">
+        <h2>과거</h2>
+        <p>불가능을 땀으로 일군 기업</p>
+      </div>
+      <div class="txt_box">
+        <h2>현재</h2>
+        <p>끊임없는 가치를 제공하는 기업</p>
+      </div>
+      <div class="txt_box">
+        <h2>미래</h2>
+        <p>한계를 뛰어 넘어,철강 그 이상으로</p>
+      </div>
+      </div>
+    </header>
+    
+    <div id="fullpage">
+      <div class="section s_01">
+        <div class="contents">
+          <video
+            id="video"
+            preload="auto"
+            controls
+            autoplay
+            loop="loop"
+            muted="muted"
+            volume="0"
+            poster="./images/bg_video_future.jpg"
+          >
+            <source src="./video/posco.mp4" />
+          </video>
+        </div>
+      </div>
+      <div class="section s_02">
+        <div class="contents">
+          <div class="box">
+            <h1>그룹 미래 전략</h1>
+            <h3>Biz. Infra</h3>
+            <div class="line"></div>
+            <div class="image">
+              <div class="people"></div>
+              <div class="work"></div>
+              <div class="life"></div>
+            </div>
+            <div class="dot_line"></div>
+            <p>스마트화로 창의형 경영 인프라 구축</p>
+          </div>
+        </div>
+      </div>
+      <div class="section s_03">
+        <div class="contents">
+          <div class="box">
+            <h3>Next 50년 향한 스마트 기업 도약, 사회적 가치 창출 기여</h3>
+            <h1>Mission 및 Vision</h1>
+            <div class="line"></div>
+            <div class="image">
+              <div class="misson"></div>
+              <div class="vision"></div>
+              <div class="future"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section s_04">
+        <div class="contents">
+          <div class="box">
+            <h1>POSCO 미래모습</h1>
+            <div class="line"></div>
+            <h3>3 Core Biz. + 3 Great 통해 글로벌 100년 기업으로 성장</h3>
+            <div class="core"></div>
+            <div class="great"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="logo">로고</div>
+      <div class="address">
+        <p>서울특별시 강남구 테헤란로 440 POSCO,All rights reserved.</p>
+      </div>
+      <ul class="gnb">
+        <li><a href="#">포스코 홈페이지</a></li>
+        <li><a href="#">포스코 뉴스룸</a></li>
+      </ul>
+    </footer>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
